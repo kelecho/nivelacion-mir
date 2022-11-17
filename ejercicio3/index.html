@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="styles.css" >
 </head>
 <body>
-    
+        <form action="" class="alto border fondo ancho espacio centrado sombreado bloque fuente1">
+            <h2 class="texto-blanco">Login</h2>
+            
+            <label class="texto-blanco fuente2" for="email">Email</label>
+            <br>
+            <input class="inputs" type="email" placeholder="Ingrese su email" name="email" id="email">
+            <br>
+            <label class="texto-blanco fuente2" for="password">Password</label>
+            <br>
+            <input class="inputs" type="password" name="password" id="password">
+            <br>
+            <label class="texto-blanco fuente2" for="generos">Género</label>
+            <select name="generos" id="genero" class="">
+                <option value="" disabled selected hidden>Seleccione un género</option>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="desc">Desconocido</option>
+            </select>
+            <br>
+            <br>
+            <label class="texto-blanco fuente2"><input type="checkbox" id="terminos" value="acepta"> Acepta los terminos</label><br>
+            <br>
+            <button class="alinear-derecha fuente2">Ingresar</button>
+        </form>
 </body>
 </html>
