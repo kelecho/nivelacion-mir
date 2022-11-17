@@ -1,68 +1,49 @@
 * {
     box-sizing: border-box;
-}
-
-.border {
-    border-radius: 20px;
-}
-
-.sombreado {
-    box-shadow: 10px 5px 5px black;
-}
-
-.fondo {
-    background-image: linear-gradient(#bd09b7, #6b4cf5);
-}
-
-.ancho {
-    width: 300px;
-}
-
-.alto {
-    height: auto;
-}
-
-.espacio {
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    width: 100%;
+    background: linear-gradient(#bd09b7, #6b4cf5);
     padding: 20px;
-}
-
-.centrado {
-    margin: 0 auto;
-}
-
-.texto-blanco {
-    color: #fafafa
-}
-
-.inputs {
-    padding: 7px 0 0 7px;
-    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #333;
+  }
+  
+  form h1 {
+    margin: 0 0 20px;
+    color: white
+  }
+  
+  form .group {
+    margin-bottom: 15px;
+  }
+  
+  input[type=email], input[type=password], select {
     width: 100%;
-}
-
-select {
-    padding: 7px 0 0 7px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-button {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.alinear-derecha{
- margin-left: 70%;
-}
-
-.bloque{
+    padding: 7px;
+  }
+  
+  form label {
     display: block;
-}
-
-.fuente1{
-    font: 150% sans-serif;
-}
-
-.fuente2 {
-    font: 80% sans-serif;
-}
+    color: white;
+  }
+  
+  .actions {
+    text-align: right;
+    
+  }
+  
+  button {
+    padding: 5px 15px;
+  }
+  
+  @media (min-width: 500px) {
+    form {
+      width: 300px;
+      margin: 40px auto;
+    }
+  }
