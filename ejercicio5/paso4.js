@@ -1,8 +1,8 @@
 function join(arreglo){
-    let result = "";
+    let result = "", last_index = arreglo.length - 1;
     for(let i=0; i < arreglo.length; i++){
         result += arreglo[i]
-        if ((arreglo.length - 1) !== i ){
+        if (last_index !== i ){
             result += " ";
         } 
     }

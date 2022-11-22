@@ -1,13 +1,12 @@
-function max(numeros){
-    let aux = 0;
-    if (numeros.length === 0)
-        return;
+function max(numbers){
+    let auxiliary = 0;
+    if (numbers.length === 0) return;
     
-    for(let i = 0; i < numeros.length; i++){
-        if ( numeros[i] > aux ) 
-            aux = numeros[i];
+    for(let i = 0; i < numbers.length; i++){
+        if ( numbers[i] > auxiliary ) 
+            auxiliary = numbers[i];
     }
-    return aux;
+    return auxiliary;
 }
 
 console.log(max([1, 3, 2]));
